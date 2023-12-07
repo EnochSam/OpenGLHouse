@@ -1,0 +1,152 @@
+//
+// Created by samen on 11/20/2023.
+//
+
+#ifndef CS370_FA23_HOUSE_H
+#define CS370_FA23_HOUSE_H
+
+//WALLS
+#define WALL_HEIGHT 10.0f
+#define WALL_Y (WALL_HEIGHT/2)
+
+#define SIDE_WALL_WIDTH 1.0f
+#define SIDE_WALL_LENGTH 20.0f
+#define SIDE_WALL_X (FRONT_WALL_WIDTH/2)
+#define SIDE_WALL_Z 0.0f
+
+#define FRONT_WALL_WIDTH 15.0f
+#define FRONT_WALL_LENGTH 1.0f
+#define FRONT_WALL_X 0.0f
+#define FRONT_WALL_Z (SIDE_WALL_LENGTH/2)
+
+#define WALL_BUFFER 1.5f
+
+
+#define FLOOR_HEIGHT 1.0f
+//TABLE
+#define TABLE_WIDTH 0.5f
+#define TABLE_HEIGHT 0.5f
+#define TABLE_LENGTH 0.5f
+
+#define TABLE_TOP_HEIGHT 1.55f
+
+#define TABLE_X 0.0f
+#define TABLE_Y (TABLE_HEIGHT/2 + FLOOR_HEIGHT/2)
+#define TABLE_Z 0.0f
+
+//CHAIR
+#define CHAIR_WIDTH 1.0f
+#define CHAIR_HEIGHT 1.0f
+#define CHAIR_LENGTH 1.0f
+#define CHAIR_X (TABLE_WIDTH/2 + CHAIR_WIDTH/2 + 0.5f)
+#define CHAIR_Y (CHAIR_HEIGHT/2 + FLOOR_HEIGHT/2)
+#define CHAIR_Z 0.0f
+
+//DOOR
+#define DOOR_WIDTH 1.0f
+#define DOOR_HEIGHT 4.0f
+#define DOOR_LENGTH 2.0f
+#define DOOR_X (FRONT_WALL_WIDTH/2 - 0.1f)
+#define DOOR_Y (DOOR_HEIGHT/2 + FLOOR_HEIGHT/2)
+#define DOOR_Z 5.0f
+
+//WINDOW
+#define WINDOW_WIDTH 4.0f
+#define WINDOW_HEIGHT 2.0f
+#define WINDOW_LENGTH 0.0f
+#define WINDOW_X 0.0f
+#define WINDOW_Y (WINDOW_HEIGHT/2 + FLOOR_HEIGHT/2 + 1.0f)
+#define WINDOW_Z (-SIDE_WALL_LENGTH/2 + FRONT_WALL_LENGTH/2 + 0.01f)
+
+//BLINDS
+#define BLIND_WIDTH 0.05f
+#define BLIND_HEIGHT (WINDOW_HEIGHT)
+#define BLIND_LENGTH 0.4f
+#define BLIND_X (WINDOW_X)
+#define BLIND_Y (WINDOW_Y)
+#define BLIND_Z (WINDOW_Z)
+#define BLIND_OFFSET 0.4f
+#define NUM_BLINDS 11
+
+//MIRROR
+#define MIRROR_WIDTH 1.0f
+#define MIRROR_HEIGHT 4.0f
+#define MIRROR_LENGTH 8.0f
+#define MIRROR_X (-FRONT_WALL_WIDTH/2 + 0.1f))
+#define MIRROR_Y (MIRROR_HEIGHT/2 + FLOOR_HEIGHT/2 + 1.0f)
+#define MIRROR_Z 0.0f
+
+//PAINTING
+#define PAINTING_WIDTH 4.0f
+#define PAINTING_HEIGHT 4.0f
+#define PAINTING_LENGTH 1.0f
+#define PAINTING_X 0.0f
+#define PAINTING_Y (PAINTING_HEIGHT/2 + FLOOR_HEIGHT/2 + 1.0f)
+#define PAINTING_Z (SIDE_WALL_LENGTH/2 - 0.1f)
+
+//FAN
+#define FAN_WIDTH 1.0f
+#define FAN_HEIGHT 1.0f
+#define FAN_LENGTH 1.0f
+#define FAN_X 0.0f
+#define FAN_Y (WALL_HEIGHT - 1.0f)
+#define FAN_Z 0.0f
+
+//CUP
+#define CUP_WIDTH 0.1f
+#define CUP_HEIGHT 0.1f
+#define CUP_LENGTH 0.1f
+
+#define CUP_X (TABLE_X + 0.75f)
+#define CUP_Y (TABLE_TOP_HEIGHT + CUP_HEIGHT/2)
+#define CUP_Z (TABLE_Z + 0.25f)
+
+//FRUIT BOWL
+#define BOWL_WIDTH 0.2f
+#define BOWL_HEIGHT 0.2f
+#define BOWL_LENGTH 0.2f
+
+#define BOWL_X (TABLE_X)
+#define BOWL_Y (TABLE_TOP_HEIGHT + BOWL_HEIGHT/2)
+#define BOWL_Z (TABLE_Z)
+
+#define APPLE_SIZE 1.25f
+
+#define ELEVATOR_WIDTH 0.75f
+#define ELEVATOR_HEIGHT 0.8f
+#define ELEVATOR_LENGTH 0.75f
+
+#define ELEVATOR_X (FRONT_WALL_WIDTH - 9.5f)
+#define ELEVATOR_Y 3.1f
+#define ELEVATOR_Z 0.0f
+
+#define ELEVATOR_DOOR_WIDTH 0.1f
+#define ELEVATOR_DOOR_HEIGHT 4.7f
+#define ELEVATOR_DOOR_LENGTH (ELEVATOR_BOUNDS*2.0f)
+
+#define ELEVATOR_DOOR_X (ELEVATOR_X - ELEVATOR_BOUNDS + 0.1f)
+#define ELEVATOR_DOOR_Y (ELEVATOR_Y)
+#define ELEVATOR_DOOR_Z (ELEVATOR_Z)
+
+#define ELEVATOR_BOUNDS 1.5f
+
+//MILLENIUM FALCON
+#define FALCON_SIZE 1.0f
+
+#define FLIGHT_POS_X 30.0f
+#define FLIGHT_POS_Y 20.0f
+#define FLIGHT_POS_Z 30.0f
+
+#define FALCON_OFFSET_X 40.0f
+#define FALCON_OFFSET_Y -30.0f
+#define FALCON_OFFSET_Z 0.0f
+
+#define FALCON_X (FLIGHT_POS_X + FALCON_OFFSET_X)
+#define FALCON_Y (FLIGHT_POS_Y + FALCON_OFFSET_Y)
+#define FALCON_Z (FLIGHT_POS_Z + FALCON_OFFSET_Z)
+
+#define HOUSE_X 0.0f
+#define HOUSE_Y 2.0f
+#define HOUSE_Z 0.0f
+
+#endif //CS370_FA23_HOUSE_H
